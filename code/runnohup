@@ -1,0 +1,2 @@
+#!/bin/bash
+nohup python ./pipeline_extract_catalogue__1.py > out.log 2>&1 &

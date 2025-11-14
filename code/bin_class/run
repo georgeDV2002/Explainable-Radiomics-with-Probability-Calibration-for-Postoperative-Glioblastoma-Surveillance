@@ -1,0 +1,26 @@
+#!/bin/bash
+
+for VAR in 512 256 128 64; do
+    BASE_DIR="${VAR}_features"
+
+    echo "=== Running for VAR=$VAR ==="
+    mkdir -p "$BASE_DIR"
+
+    python3 rank_and_split__4.py --topk "$VAR" > "$BASE_DIR/rank.log" 2>&1
+    echo "[DONE] rank_and_split__4.py (VAR=$VAR)"
+
+    python3 logreg__5a.py --topk "$VAR" > "$BASE_DIR/logreg.log" 2>&1
+    echo "[DONE] logreg__5a.py (VAR=$VAR)"
+
+    python3 lightGBM__5b.py --topk "$VAR" > "$BASE_DIR/lgbm.log" 2>&1
+    echo "[DONE] lightGBM__5b.py (VAR=$VAR)"
+
+    python3 randfor__5c.py --topk "$VAR" > "$BASE_DIR/randfor.log" 2>&1
+    echo "[DONE] randfor__5c.py (VAR=$VAR)"
+
+    python3 svc__5d.py --topk "$VAR" > "$BASE_DIR/svc.log" 2>&1
+    echo "[DONE] svc__5d.py (VAR=$VAR)"
+
+    echo
+done
+

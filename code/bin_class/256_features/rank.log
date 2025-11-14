@@ -1,0 +1,67 @@
+[split] Patients total: 203 | train-cv: 173 | test: 30
+[split] Rows     total: 593 | train-cv: 497 | test: 96
+[label] Train-CV class counts (1/0): {1: 327, 0: 170}
+[label] Test     class counts (1/0): {1: 53, 0: 43}
+[test patients] PatientID_0152, PatientID_0111, PatientID_0238, PatientID_0197, PatientID_0020, PatientID_0022, PatientID_0041, PatientID_0209, PatientID_0189, PatientID_0150, PatientID_0030, PatientID_0042, PatientID_0242, PatientID_0112, PatientID_0205, PatientID_0198, PatientID_0081, PatientID_0162, PatientID_0089, PatientID_0086, PatientID_0103, PatientID_0130, PatientID_0095, PatientID_0264, PatientID_0161, PatientID_0249, PatientID_0160, PatientID_0138, PatientID_0240, PatientID_0171
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/traincv_set__4.xlsx
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/test_set__4.xlsx
+Sample-wise class counts (train-cv): {1: 327, 0: 170} | samples: 497
+Features used (train-cv): 4892
+Mean CV AUC (train-cv): 0.826 ± 0.037
+[diag] folds with PI: 10 / 10
+[diag] PI median (head 10):
+core__t2__log-sigma-1-0-mm-3D_glszm_SmallAreaEmphasis       6.230e-02
+core__t2__wavelet-HHL_glcm_Correlation                      5.910e-02
+core__flair__wavelet-LLH_glcm_MCC                           3.688e-02
+core__t1ce__wavelet-LLL_firstorder_10Percentile             3.393e-02
+core__t1__wavelet-LHL_firstorder_Skewness                   3.333e-02
+core__t1ce__wavelet-LHL_firstorder_Skewness                 3.222e-02
+core__t1__wavelet-HLL_glrlm_RunEntropy                      2.756e-02
+core__flair__original_glszm_SmallAreaLowGrayLevelEmphasis   2.402e-02
+core__t1ce__wavelet-LHH_glszm_SmallAreaEmphasis             2.264e-02
+core__t1ce__wavelet-LLH_firstorder_Skewness                 2.180e-02
+dtype: float64
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/importance_traincv__4.csv
+
+Top features (consensus) — first 30 rows:
+                                                    median_abs_coef  ...  consensus_rank
+core__t2__log-sigma-1-0-mm-3D_glszm_SmallAreaEm...        8.033e-01  ...       2.000e+00
+core__flair__wavelet-LLH_glcm_MCC                         6.916e-01  ...       6.000e+00
+core__t1__wavelet-LHL_firstorder_Skewness                 7.301e-01  ...       7.000e+00
+core__t1ce__wavelet-LLL_firstorder_10Percentile           5.561e-01  ...       1.100e+01
+core__t2__wavelet-HHL_glcm_Correlation                    5.356e-01  ...       1.200e+01
+core__flair__original_glszm_SmallAreaLowGrayLev...        6.013e-01  ...       1.200e+01
+core__t1ce__wavelet-LHL_firstorder_Skewness               5.472e-01  ...       1.400e+01
+core__t2__wavelet-HLL_firstorder_Median                   5.588e-01  ...       1.800e+01
+core__t1__wavelet-HLL_glrlm_RunEntropy                    5.021e-01  ...       1.900e+01
+core__t1ce__wavelet-LLL_firstorder_RootMeanSquared        5.440e-01  ...       2.300e+01
+core__t1ce__wavelet-LLH_firstorder_Skewness               4.623e-01  ...       2.700e+01
+core__t2__wavelet-LLH_firstorder_Median                   5.189e-01  ...       2.700e+01
+core__t2__wavelet-LLH_glcm_MaximumProbability             4.968e-01  ...       2.800e+01
+core__t1ce__wavelet-LHH_firstorder_Skewness               5.648e-01  ...       2.900e+01
+core__t1__wavelet-LHL_glszm_SmallAreaEmphasis             4.742e-01  ...       3.200e+01
+core__t1ce__wavelet-LHH_glszm_SmallAreaEmphasis           4.207e-01  ...       3.500e+01
+core__t1__wavelet-LHL_firstorder_Median                   4.689e-01  ...       3.600e+01
+core__t1ce__wavelet-HLH_glszm_ZoneEntropy                 4.611e-01  ...       3.800e+01
+core__t1ce__wavelet-HLL_glcm_Correlation                  4.178e-01  ...       4.000e+01
+core__t1__wavelet-HLH_glszm_SmallAreaEmphasis             4.535e-01  ...       4.100e+01
+core__t2__wavelet-LLL_firstorder_Kurtosis                 3.717e-01  ...       4.600e+01
+core__flair__wavelet-LLH_firstorder_Skewness              3.959e-01  ...       4.800e+01
+core__t1ce__wavelet-LLL_firstorder_Kurtosis               4.269e-01  ...       5.200e+01
+core__flair__log-sigma-0-5-mm-3D_glszm_ZoneEntropy        4.288e-01  ...       5.200e+01
+core__flair__wavelet-LHL_glszm_SmallAreaLowGray...        3.857e-01  ...       5.400e+01
+core__flair__wavelet-LLL_glszm_SmallAreaEmphasis          4.396e-01  ...       5.400e+01
+core__t2__wavelet-HLH_firstorder_Mean                     4.143e-01  ...       5.900e+01
+core__t2__wavelet-LLH_gldm_DependenceVariance             4.235e-01  ...       5.900e+01
+core__t1__wavelet-LHL_glcm_ClusterShade                   4.735e-01  ...       5.900e+01
+core__t1__wavelet-LLL_firstorder_RootMeanSquared          3.611e-01  ...       6.100e+01
+
+[30 rows x 6 columns]
+
+Family summary in top-256:
+family  count_in_top256
+  core              256
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/feature_list__4.csv (256 features)
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/traincv_set__4_topk.xlsx
+[saved] /home/georgedv/programs/radiomics1/bin_class/256_features/test_set__4_topk.xlsx
+Sanity checks passed ✅

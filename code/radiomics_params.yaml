@@ -1,0 +1,25 @@
+imageType:
+  Original: {}
+  LoG:
+    sigma: [0.5, 1.0, 2.0, 3.0]
+  Wavelet: {}
+
+featureClass:
+  shape: []        # 3D shape only
+  firstorder: []
+  glcm: []
+  glrlm: []
+  glszm: []
+  gldm: []
+  ngtdm: []
+  # shape2D: []    # <-- omit or comment out to not request 2D features
+
+setting:
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: sitkBSpline
+  normalize: true
+  normalizeScale: 100
+  binWidth: 25
+  correctMask: true
+  # force2D: false   # (default) keep false for 3D extraction
+

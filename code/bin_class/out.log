@@ -1,0 +1,22 @@
+nohup: ignoring input
+=== Running for VAR=256 ===
+[DONE] rank_and_split__4.py (VAR=256)
+[DONE] logreg__5a.py (VAR=256)
+[DONE] lightGBM__5b.py (VAR=256)
+[DONE] randfor__5c.py (VAR=256)
+[DONE] svc__5d.py (VAR=256)
+
+=== Running for VAR=128 ===
+[DONE] rank_and_split__4.py (VAR=128)
+[DONE] logreg__5a.py (VAR=128)
+[DONE] lightGBM__5b.py (VAR=128)
+[DONE] randfor__5c.py (VAR=128)
+[DONE] svc__5d.py (VAR=128)
+
+=== Running for VAR=64 ===
+[DONE] rank_and_split__4.py (VAR=64)
+[DONE] logreg__5a.py (VAR=64)
+[DONE] lightGBM__5b.py (VAR=64)
+[DONE] randfor__5c.py (VAR=64)
+[DONE] svc__5d.py (VAR=64)
+
