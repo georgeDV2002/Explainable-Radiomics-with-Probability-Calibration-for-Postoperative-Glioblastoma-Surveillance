@@ -19,20 +19,20 @@ The code performs:
 ---------------------------------------------------------------------------------------------
 Repository Structure
 ---------------------------------------------------------------------------------------------
-pipeline_extract_catalogue__1.py      : Preprocessing + PyRadiomics extraction
-collect_dataset__2.py                 : Merge radiomics with clinical metadata
-derivatives/                          : Output directory for radiomics and availability tables
-bin_class/rank_and_split__4.py        : Feature ranking + patient-aware splitting
-bin_class/logreg__5a.py               : Logistic Regression classifier
-bin_class/lightGBM__5b.py             : LightGBM classifier
-bin_class/randfor__5c.py              : Random Forest classifier
-bin_class/svc__5d.py                  : SVM classifier
-corr_plot__4a.py                      : Clustered correlation heatmaps
-corr_plot__4b.py                      : Block correlation plots by feature family
-violin_plot__4c.py                    : Family-level violin plots
-violin_plot__4d.py                    : Redundancy tail plots (95th percentile and |r|>0.8)
-stats__3.py                           : Clinical cohort statistics
-radiomics_params.yaml                 : PyRadiomics configuration file
+- pipeline_extract_catalogue__1.py      : Preprocessing + PyRadiomics extraction
+- collect_dataset__2.py                 : Merge radiomics with clinical metadata
+- derivatives/                          : Output directory for radiomics and availability tables
+- bin_class/rank_and_split__4.py        : Feature ranking + patient-aware splitting
+- bin_class/logreg__5a.py               : Logistic Regression classifier
+- bin_class/lightGBM__5b.py             : LightGBM classifier
+- bin_class/randfor__5c.py              : Random Forest classifier
+- bin_class/svc__5d.py                  : SVM classifier
+- corr_plot__4a.py                      : Clustered correlation heatmaps
+- corr_plot__4b.py                      : Block correlation plots by feature family
+- violin_plot__4c.py                    : Family-level violin plots
+- violin_plot__4d.py                    : Redundancy tail plots (95th percentile and |r|>0.8)
+- stats__3.py                           : Clinical cohort statistics
+- radiomics_params.yaml                 : PyRadiomics configuration file
 
 ---------------------------------------------------------------------------------------------
 Installation
