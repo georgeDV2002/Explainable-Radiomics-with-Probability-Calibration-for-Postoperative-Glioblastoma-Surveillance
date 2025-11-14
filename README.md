@@ -37,9 +37,13 @@ radiomics_params.yaml                 : PyRadiomics configuration file
 ---------------------------------------------------------------------------------------------
 Installation
 ---------------------------------------------------------------------------------------------
+This project was developed and tested with Python 3.11.8.
+Using a different Python version may lead to slightly different results.
+
 1. Clone the repository and enter the folder:
-   git clone https://github.com/<your-username>/<repo>.git
-   cd <repo>
+   git clone https://github.com/georgeDV2002/Explainable-Radiomics-with-Probability-Calibration-for-Postoperative-Glioblastoma-Surveillance.git
+   cd Explainable-Radiomics-with-Probability-Calibration-for-Postoperative-Glioblastoma-Surveillance
+
 
 2. Create a virtual environment:
    python -m venv venv
