@@ -42,14 +42,15 @@ Using a different Python version may lead to slightly different results.
 
 1. Clone the repository and enter the folder:
    git clone https://github.com/georgeDV2002/Explainable-Radiomics-with-Probability-Calibration-for-Postoperative-Glioblastoma-Surveillance.git
+   
    cd Explainable-Radiomics-with-Probability-Calibration-for-Postoperative-Glioblastoma-Surveillance
 
 
-2. Create a virtual environment:
+3. Create a virtual environment:
    python -m venv venv
    source venv/bin/activate        (Windows: venv\Scripts\activate)
 
-3. Install Python dependencies:
+4. Install Python dependencies:
    pip install -r requirements.txt
 
 ---------------------------------------------------------------------------------------------
