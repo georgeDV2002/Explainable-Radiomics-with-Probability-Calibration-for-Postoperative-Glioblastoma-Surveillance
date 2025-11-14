@@ -48,9 +48,10 @@ Using a different Python version may lead to slightly different results.
 
 3. Create a virtual environment:
    python -m venv venv
+   
    source venv/bin/activate        (Windows: venv\Scripts\activate)
 
-4. Install Python dependencies:
+5. Install Python dependencies:
    pip install -r requirements.txt
 
 ---------------------------------------------------------------------------------------------
