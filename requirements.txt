@@ -1,0 +1,21 @@
+# Requires Python 3.11.8
+
+numpy==1.26.4
+pandas==2.3.2
+scipy==1.16.2
+scikit-learn==1.7.2
+matplotlib==3.10.6
+tqdm==4.67.1
+
+nibabel==5.3.2
+simpleitk==2.5.2
+pyradiomics==3.0.1
+PyYAML==6.0.2
+pykwalify==1.8.0
+
+lightgbm==4.6.0
+optuna==4.5.0
+shap==0.48.0
+
+openpyxl==3.1.5
+xlsxwriter==3.2.9
